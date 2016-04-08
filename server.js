@@ -21,7 +21,12 @@ app.listen(port);
 
 console.log("port started");
 
-app.get('/', function(req, res) {
+app.get('/', function(req, res, next) {
     res.render('template/whatsExperiment.html');
+	console.log("got your hit : refreshing");
+});
+
+app.get('/whatsThat', function(req, res, next) {
+    res.render('template/practiceOther.html');
 	console.log("got your hit : refreshing");
 });

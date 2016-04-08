@@ -2,6 +2,9 @@
 /* CSS Document */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
+@import "bootstrap.css";
+
+
 body{
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -83,7 +86,7 @@ header{
     overflow: hidden;
     -webkit-animation-name: change;
     -webkit-animation-duration: 30s;
-    -webkit-animation-iteration-count: 10;
+    -webkit-animation-iteration-count: 3;
     -webkit-animation-direction: alternate;
     -webkit-animation-timing-function: linear;
 	.logo{
@@ -245,23 +248,3 @@ header{
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
