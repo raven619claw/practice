@@ -30,7 +30,6 @@ a:focus {
   padding: 0; }
 
 header {
-  border-bottom: 1px solid rgba(238, 238, 238, 0.8);
   padding-left: 0;
   padding-right: 0; }
 
@@ -65,12 +64,15 @@ header {
   -webkit-animation-duration: 30s;
   -webkit-animation-iteration-count: 3;
   -webkit-animation-direction: alternate;
-  -webkit-animation-timing-function: linear; }
+  -webkit-animation-timing-function: linear;
+  animation: change 30s infinite; }
   .banner-wrap .logo {
     display: inline-block;
     color: #f1f1f1;
     text-transform: uppercase;
     font-size: 28px; }
+  .banner-wrap .banner-bottom {
+    border-bottom: 1px solid rgba(238, 238, 238, 0.8); }
   .banner-wrap .design-elem {
     position: absolute;
     width: 100%;
@@ -182,5 +184,22 @@ header {
         margin: 0 auto; }
       .features-wrap .feaures-list ul li:hover .img-wrap img {
         transform: scale(1); }
+
+.signup-wrap {
+  background-color: #313131; }
+  .signup-wrap .heading {
+    padding-top: 50px;
+    margin-bottom: 35px;
+    text-align: center; }
+    .signup-wrap .heading h2 {
+      font-size: 40px;
+      font-weight: 600;
+      color: #f7f7f7;
+      max-width: 600px;
+      margin: 0 auto; }
+  .signup-wrap .button-wrap {
+    margin-top: 35px;
+    padding-bottom: 50px;
+    text-align: center; }
 
 /*# sourceMappingURL=custom.css.map */

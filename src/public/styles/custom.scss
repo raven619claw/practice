@@ -51,7 +51,6 @@ a{
 }
 
 header{
-    border-bottom: 1px solid rgba(238, 238, 238, .8);
     padding-left: 0;
     padding-right: 0;
 }
@@ -89,12 +88,16 @@ header{
     -webkit-animation-iteration-count: 3;
     -webkit-animation-direction: alternate;
     -webkit-animation-timing-function: linear;
+     animation: change 30s infinite; 
 	.logo{
 		display: inline-block;
         color: #f1f1f1;
         text-transform: uppercase;
         font-size: 28px;
 	}
+    .banner-bottom{
+        border-bottom: 1px solid rgba(238, 238, 238, .8);
+    }
     .design-elem{
         position: absolute;
         width: 100%;
@@ -157,7 +160,7 @@ header{
     }
 }
 
-.testEnv-wrap, .features-wrap{
+.testEnv-wrap, .features-wrap {
     background: $primColor;
     .design-elem{
         .line{
@@ -246,5 +249,26 @@ header{
                 }
             }
         }
+    }
+}
+
+.signup-wrap{
+    background-color: #313131;
+    .heading{
+        padding-top: 50px;
+        margin-bottom: 35px;
+        text-align: center; 
+        h2{
+            font-size: 40px;
+            font-weight: 600;
+            color: #f7f7f7;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+    .button-wrap{
+        margin-top: 35px;
+        padding-bottom: 50px;
+        text-align: center;
     }
 }
