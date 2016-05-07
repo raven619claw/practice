@@ -30,3 +30,8 @@ app.get('/whatsThat', function(req, res, next) {
     res.render('template/practiceOther.html');
 	console.log("got your hit : refreshing");
 });
+
+app.get('/hk', function(req, res, next) {
+    res.render('template/hk.html');
+    console.log("got your hit : refreshing");
+});
