@@ -11,6 +11,7 @@ body{
 
 $primColor: #e74c3c;
 $hover: #e75a3b;
+$blue: #01a6e6;
 
 
 a{
@@ -34,6 +35,9 @@ a{
     margin: 0 auto;
 }
 
+.blue{
+    color: $blue;
+}
 
 header{
     padding-left: 0;
@@ -169,7 +173,7 @@ header{
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus{
-    color: #01a6e6;
+    color: $blue;
     text-decoration: none;
     background-color: transparent;
     font-weight: bold;
@@ -270,7 +274,7 @@ h3.heading{
             display: block;
         }
         a{
-            background-color: #01a6e6;
+            background-color: $blue;
             padding: 7px 11px;
             text-align: center;
             display: inline-block;
@@ -304,7 +308,7 @@ h3.heading{
                 left: 3px;
                 width: 100%;
                 height: 3px;
-                background-color: #01a6e6;
+                background-color: $blue;
             }
         }   
     }
@@ -315,6 +319,66 @@ h3.heading{
             border-bottom: 1px solid #ececec;
             &:last-child{
                 border-bottom: 0;
+            }
+        }
+    }
+}
+
+.heading-wrap{
+    border-bottom: 1px solid #ececec;
+    h2.heading{
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 18px;
+        &:after{
+            content: "";
+            position: absolute;
+            bottom: -11px;
+            left: 3px;
+            width: 100%;
+            height: 3px;
+            background-color: $blue;
+        }
+    }
+}
+
+
+.slider-wrap{
+    ul{
+        white-space: nowrap;
+        padding: 0;
+        list-style: none;
+        margin-top: 20px;
+        li{
+            width: 32%;
+            display: inline-block;
+            vertical-align: top;
+            overflow: hidden;
+            .content-wrap{
+                margin: 0 auto;
+                width: 320px;
+            }
+            .img-wrap{
+                width: 320px;
+                height: 275px;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                .bot-txt{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 12px 10px 5px;
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, transparent 100%);
+                    white-space: normal;
+                    color: #ffffff;
+                }
+            }
+            .author{
+                margin-top: 8px;
             }
         }
     }
