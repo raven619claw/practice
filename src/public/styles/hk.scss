@@ -201,6 +201,9 @@ header{
 
 
 .share-wrap{
+    .share-options{
+        float: right;
+    }
     a{
         margin-right: 5px;
         display: inline-block;
@@ -325,8 +328,58 @@ h3.heading{
         width: 100%;
         .navbar-toggle{
             margin-right: 0;
+            float: left;
+            box-shadow: none;
+            border: 0;
         }
     }
+
+    .container-fluid{
+        .navbar-brand{
+            margin-left: 30px;
+        }  
+    } 
+
+    .banner-section{
+        .banner-wrap{
+            .banner-bg{
+                .transform-wrap{
+                    .before{
+                        margin-right: 40px;
+                    }
+                    .before,.after{
+                        width: 140px;
+                        height: 140px;
+                    }
+                    .arrow{
+                        left: 45%;
+                    }
+                } 
+            }
+            ul.details{
+                li{
+                    width: 32%;
+                    vertical-align: top;
+                    .item{
+                        display: inline-block;
+                        width: 100%;
+                        &.arrow{
+                            transform: rotate(90deg);
+                            height: 20px;
+                        }
+                    }
+                }  
+            }  
+        } 
+    }
+
+    .share-wrap{
+        margin-top: 20px;
+        .share-options{
+            float: none;
+        }
+    }
+
 }
 
 
