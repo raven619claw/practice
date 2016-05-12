@@ -1,0 +1,5 @@
+src/node_modules/
+src/.sass-cache/
+src/build/
+src/public/styles/css/
+.DS_Store
