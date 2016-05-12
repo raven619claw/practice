@@ -31,7 +31,7 @@ app.get('/whatsThat', function(req, res, next) {
 	console.log("got your hit : refreshing");
 });
 
-app.get('/healthy', function(req, res, next) {
+app.get('/hk', function(req, res, next) {
     res.render('template/hk.html');
     console.log("got your hit : refreshing");
 });
