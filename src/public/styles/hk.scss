@@ -345,16 +345,21 @@ h3.heading{
 
 
 .slider-wrap{
+    position: relative;
     ul{
         white-space: nowrap;
         padding: 0;
         list-style: none;
         margin-top: 20px;
+        transition: all 500ms ease-in-out;
+        overflow: hidden;
         li{
-            width: 32%;
+            width: 32.3%;
             display: inline-block;
             vertical-align: top;
             overflow: hidden;
+            transition: all 500ms ease-in-out;
+            transform: translateX(0);
             .content-wrap{
                 margin: 0 auto;
                 width: 320px;
@@ -381,6 +386,21 @@ h3.heading{
                 margin-top: 8px;
             }
         }
+    }
+    .toggle-left, .toggle-right{
+        background: url("/images/hk/Arrows-Back-icon.png") center no-repeat;
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -35px;
+        z-index: 99;
+        cursor: pointer;
+    }
+    .toggle-right{
+        transform: rotate(180deg);
+        left: auto;
+        right: 0;
     }
 }
 
@@ -443,6 +463,18 @@ h3.heading{
             float: none;
         }
     }
+
+
+    .slider-wrap{
+        ul{
+            li{
+                width: 100%;
+            }
+        }
+    }
+
+
+
 
 }
 
