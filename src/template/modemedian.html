@@ -10,6 +10,11 @@
             font: 13px verdana;
             font-weight: normal;
         }
+        .btn{
+            box-shadow: none;
+            padding: 10px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -17,10 +22,17 @@
         <input type="button" id="btAdd" value="Add Element" class="bt" />
         
     </div>
+
+    <div id="main2">
+        <button id="addbtn1" class="btn"> add element </button>
+
+
+        <button id="median">median</button>
+        <div class="median-output"> </div>
+    </div>
 </body>
 <script>
     $(document).ready(function() {
-
         var iCnt = 0;
         // CREATE A "DIV" ELEMENT AND DESIGN IT USING JQUERY ".css()" CLASS.
         var container = $(document.createElement('div')).css({
@@ -58,12 +70,8 @@
                 $('#btAdd').attr('class', 'bt-disable'); 
                 $('#btAdd').attr('disabled', 'disabled');
             }
-        });
-
-       
-        
+        }); 
     });
-
     // PICK THE VALUES FROM EACH TEXTBOX WHEN "SUBMIT" BUTTON IS CLICKED.
     var divValue, values = '';
 
@@ -85,5 +93,34 @@
         $(divValue).append('<p><b>Your selected values</b></p>' + values);
         $('body').append(divValue);
     }
+
+    // *********************************************************
+    $(document).ready(function() {
+        $('#addbtn1').click(function() {
+            $("#main2").append('<input type="text" class="x" />');
+
+        });
+        $('#median').click(function() {
+            getArray();
+        });
+    });
+
+    function median(values) {
+        values.sort( function(a,b) {return a - b;} );
+        var half = Math.floor(values.length/2);
+        if(values.length % 2)
+            return values[half];
+        else
+            return (values[half-1] + values[half]) / 2.0;
+    }
+
+    function getArray(){
+        var allarray = $('.x').map(function(){return parseInt($(this).val());}).get();
+        console.log(allarray);
+        var output = median(allarray);
+        console.log(output);
+        $(".median-output").html(output);
+    }
+
 </script>
 </html>
