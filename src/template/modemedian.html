@@ -29,6 +29,8 @@
 
         <button id="median">median</button>
         <div class="median-output"> </div>
+        <button id="mean">mean </button>
+        <div class="mean-output"> </div>
     </div>
 </body>
 <script>
@@ -103,6 +105,9 @@
         $('#median').click(function() {
             getArray();
         });
+        $('#mean').click(function() {
+            mean();
+        });
     });
 
     function median(values) {
@@ -112,7 +117,18 @@
             return values[half];
         else
             return (values[half-1] + values[half]) / 2.0;
-    }
+    };
+
+    function mean(){
+        var allarray = $('.x').map(function(){return parseInt($(this).val());}).get();
+        var sum = 0;
+        for( var i = 0; i < allarray.length; i++ ){
+            sum += parseInt( allarray[i], 10 ); //don't forget to add the base
+        }
+        var avg = sum/allarray.length;
+        console.log(avg);
+        $(".mean-output").html(avg);
+    };
 
     function getArray(){
         var allarray = $('.x').map(function(){return parseInt($(this).val());}).get();
