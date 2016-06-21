@@ -31,6 +31,11 @@ app.get('/whatsThat', function(req, res, next) {
 	console.log("got your hit : refreshing");
 });
 
+app.get('/median', function(req, res, next) {
+    res.render('template/modemedian.html');
+	console.log("got your hit : refreshing");
+});
+
 app.get('/hk', function(req, res, next) {
     res.render('template/hk.html');
     console.log("got your hit : refreshing");
