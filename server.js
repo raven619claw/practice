@@ -40,3 +40,11 @@ app.get('/hk', function(req, res, next) {
     res.render('template/hk.html');
     console.log("got your hit : refreshing");
 });
+
+app.get('/twit', function(req, res, next) {
+    res.render('template/twit.html');
+    console.log("got your hit : refreshing");
+});
+
+
+
