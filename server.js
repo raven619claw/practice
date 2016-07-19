@@ -26,6 +26,11 @@ app.get('/', function(req, res, next) {
 	console.log("got your hit : refreshing");
 });
 
+app.get('/maaco', function(req, res, next) {
+    res.render('template/maaco.html');
+    console.log("got your hit : refreshing");
+});
+
 app.get('/whatsThat', function(req, res, next) {
     res.render('template/practiceOther.html');
 	console.log("got your hit : refreshing");
@@ -43,6 +48,11 @@ app.get('/hk', function(req, res, next) {
 
 app.get('/twit', function(req, res, next) {
     res.render('template/twit.html');
+    console.log("got your hit : refreshing");
+});
+
+app.get('/innoplexus', function(req, res, next) {
+    res.render('template/innoplexus.html');
     console.log("got your hit : refreshing");
 });
 
