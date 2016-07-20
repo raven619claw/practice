@@ -113,9 +113,11 @@ section.content-wrap{
         margin: 0;
         position: fixed;
         height: 100%;
+        width: 100%;
+        overflow: hidden;
+        display: table;
         li{
-            display: inline-block;
-            max-width: 33%;
+            display: table-cell;
             height: 100%;
             position: relative;
             border-right: 1px solid #bebebe;
@@ -123,6 +125,32 @@ section.content-wrap{
                 display: inline-block;
                 width: 100%;
                 vertical-align: top;
+                transition: all 500ms ease-in-out;
+                .plus-sign{
+                    display: none;
+                }
+                &.collapsed{
+                    overflow: hidden;
+                    width: 40px;
+                    .article-wrap,
+                    .head-wrap h2{
+                        opacity: 0;
+                        height: 0;
+                    }
+                    .head-wrap{
+                        .minus{
+                            top: 12%;
+                            right: 6px;
+                            padding: 10px 7px 13px;
+                            .minus-sign{
+                                display: none;
+                            }
+                            .plus-sign{
+                                display: block;
+                            }
+                        }
+                    }
+                }
             }
             .head-wrap{
                 display: inline-block;
@@ -154,6 +182,32 @@ section.content-wrap{
                 article{
                     line-height: 1.2;
                     display: inline-block;
+                }
+            }
+            .after-collpase{
+                transform: translateX(-44%) translateY(100%) rotate(90deg);
+                position: fixed;
+                top: 212px;
+                left: 0;
+                height: 27px;
+                /* border: 1px solid #b3b3b3; */
+                width: 100%;
+                padding: 10px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 300ms ease-in-out;
+                background: #f9f9f9;
+                z-index: 999;
+                text-align: center;
+                .roateIt{
+                    display: inline-block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                &.show{
+                    opacity: 1;
+                    visibility: visible;
                 }
             }
         }
