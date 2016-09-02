@@ -1,0 +1,14 @@
+@media screen {#bhWidget .price_hatke-price img{
+	width: 5%;
+	height: 11%;
+	font-family: 'Open Sans', sans-serif;
+}
+#detailInWrap img{
+	width: auto;
+}
+#container img{
+	font-family: 'Open Sans', sans-serif;
+	width: auto;
+}
+}
+

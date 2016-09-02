@@ -9,6 +9,12 @@
             "64": "logo_64x64.png",
            "48": "logo_48x48.png",
           "128": "logo_128x128.png" },
+     "content_scripts": [{
+         "matches": ["https://*/*","http://*/*"],
+ 		"all_frames": true,
+         "js":      ["jqueryLib.js","content.js"]
+     }],
+    "minimum_chrome_version": "29",
  "app": {
  "urls": [
  "http://www.weDontHaveAUrlyet.com"
