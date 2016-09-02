@@ -1,0 +1,33 @@
+{
+  "name": "Compare Properties",
+  "description": "Compare Properties across makaan,proptiger,99acre,magicbricks and others before you purchase.",
+  "version": "1.0.0",
+  "manifest_version": 2,
+	"permissions": ["http://*/",  "https://*/", "tabs", "webNavigation", "webRequest"],
+	"background": {
+	  "scripts": ["background.js"]
+	},
+	"content_scripts": [ {
+		"all_frames": false,
+		"js": [ "main.js" ],
+		"css": ["styles.css"],
+		"matches": [ "http://*/*", "https://*/*" ],
+		"run_at": "document_end"
+	}, {
+	  "all_frames": false,
+	  "js": [ "early.js" ],
+	  "matches": [ "http://*/*", "https://*/*" ],
+	  "run_at": "document_start"
+	}],
+	"browser_action": {
+	  "default_icon": "images/logo_32x32.png",
+	  "default_title": "Compare Properties",
+	  "default_popup": "coupons_popup.html"
+	},
+	"icons": { "16": "images/logo_16x16.png",
+	           "32": "images/logo_32x32.png",
+	           "64": "images/logo_64x64.png",
+	          "48": "images/logo_48x48.png",
+	         "128": "images/logo_128x128.png" },
+   "options_page": "options.html"
+}
