@@ -1,0 +1,22 @@
+{
+// "update_url": "https://clients2.google.com/service/update2/crx",
+
+ "name": "Compare Properties",
+ "short_name": "Compare Properties",
+ "description": "Compare Properties  across makaan, proptiger ,99acre , magicbricks and  others before you purchase.",
+ "version": "1.0.0",
+ "manifest_version": 2,
+ "icons": { "16": "logo_16x16.png",
+            "32": "logo_32x32.png",
+            "64": "logo_64x64.png",
+           "48": "logo_48x48.png",
+          "128": "logo_128x128.png" },
+ "app": {
+ "urls": [
+ "http://www.weDontHaveAUrlyet.com"
+ ],
+ "launch": {
+ "web_url":  "http://www.weDontHaveAUrlyet.com"
+ }
+ }
+ }
