@@ -22,8 +22,13 @@ app.listen(port);
 console.log("port started");
 
 app.get('/', function(req, res, next) {
-    res.render('template/whatsExperiment.html');
-	console.log("got your hit : refreshing");
+    res.render('template/twit.html');
+    console.log("got your hit : refreshing");
+});
+
+app.get('/whatsExp', function(req, res, next) {
+        res.render('template/whatsExperiment.html');
+        console.log("got your hit : refreshing");
 });
 
 app.get('/maaco', function(req, res, next) {
@@ -43,11 +48,6 @@ app.get('/median', function(req, res, next) {
 
 app.get('/hk', function(req, res, next) {
     res.render('template/hk.html');
-    console.log("got your hit : refreshing");
-});
-
-app.get('/twit', function(req, res, next) {
-    res.render('template/twit.html');
     console.log("got your hit : refreshing");
 });
 

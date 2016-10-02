@@ -6,6 +6,12 @@ body{
     font-family: "open sans";
     box-sizing: border-box;
     background-color: #f2eee8;
+    *{
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: border-box;
+    }
 }
 .lghtgry{
     color: #c6c1b0;
@@ -15,14 +21,15 @@ body{
     color: #605e58;
 }
 .max720{
-	max-width: 720px;
-	margin: 50px auto;
+    max-width: 720px;
+    margin: 50px auto;
     float: none;
     display: block;
 }
 .head{
     background-color: #ffffff;
     box-shadow: 0 0 3px -1px rgba(68, 68, 68, 0.5);
+    margin-bottom: 55px;
     ul{
         list-style: none;
         padding: 0;
@@ -38,3 +45,60 @@ body{
         }
     }
 }
+
+.twit-main-container{
+    background: #fffbf5;
+    .twit-wrap{
+        padding: 30px 15px;
+        .img-wrap{
+            border-radius: 50%;
+            width: 52px;
+            height: 52px;
+            vertical-align: top;
+            display: inline-block;
+            border: 1px solid #cdcdcd;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        width: 100%;
+        li{
+            color: #f1ede8;
+        }
+    }
+    .detail-wrap{
+        padding-left: 18px;
+        h2.actual-name{
+            margin: 0;
+            font-size: 16px;
+            display: inline-block;
+            color: #57575f;
+        }
+        .username{
+            color: #c6c1b0;
+            font-size: 15px;
+        }
+        .twit-writ-wrap{
+            color: #605e58;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
