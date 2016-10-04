@@ -3,11 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../public/styles/css/basscss.min.css">
+        <link rel="stylesheet" href="../public/styles/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../public/styles/css/customtwit.min.css">
         <title>twit</title>
     </head>
     <body>
+        <div class="clearfix" data-module="header">
+        <header id="header">
+            <div> this is just some dummy div random</div>
+            <h1 data-type="new-notification-banner">todos</h1>
+        </header>
         <div class="max720 clearfix">
             <div class="container sm-col sm-col-12">
                 <div class="head clearfix">
@@ -40,7 +45,7 @@
                                 <div class="sm-col sm-col-11 detail-wrap">
                                     <h2 class="actual-name">kerem suer</h2> <span class="username">@kerne</span>
                                     <div class="twit-writ-wrap">
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                                     </div>
                                     <div class="option-wrap"></div>
                                 </div>
@@ -50,5 +55,17 @@
                 </div>
             </div>
         </div>
+        </div>
+        <script src="../public/scripts/t3.js"></script>
+        <script src="../public/scripts/doT.js"></script>
+        <script src="../public/scripts/doT.js"></script>
+        <script src="../public/scripts/require-doT.js"></script>
+        <script src="../public/scripts/modules/header.js"></script>
+        <script>
+            Application.init({
+                debug: true
+            });
+        </script>
     </body>
+    
 </html>
