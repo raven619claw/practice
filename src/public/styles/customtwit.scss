@@ -28,6 +28,9 @@ body{
     float: none;
     display: block;
 }
+.main-wrap{
+    position: relative;
+}
 .head{
     background-color: #ffffff;
     box-shadow: 0 0 3px -1px rgba(68, 68, 68, 0.5);
@@ -47,6 +50,24 @@ body{
         }
     }
 }
+
+.refresh{
+    background-color: #80a8cc;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    width: 120px;
+    margin: 0 auto;
+    padding: 5px 0;
+    border-radius: 2px;
+    position: absolute;
+    top: 75px;
+    left: calc(57% - 120px);
+    cursor: pointer;
+    box-shadow: 0 0 6px 1px rgba(135, 135, 135, 0.5);
+}
+
 
 .twit-main-container{
     background: #fffbf5;

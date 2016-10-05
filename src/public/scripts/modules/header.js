@@ -1,8 +1,8 @@
 debugger;
-import template from 'view.html!text';
+
 Application.addModule('header', function(context) {
 	'use strict';
-debugger;
+
 	var dummyNotfCount,
 		notificationArray = [{
 		    name: 'Muskaan Jain',
@@ -78,7 +78,7 @@ debugger;
 			            poll();
 			        });
 
-			    }, 3000);
+			    }, 10000);
 			})();
 		},
 		onclick: function(event, element, elementType) {
