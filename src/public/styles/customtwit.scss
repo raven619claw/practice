@@ -64,6 +64,28 @@ body{
     }
 }
 
+@-webkit-keyframes pulse {
+  0%   { transform: scale(1); }
+  50%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+@-moz-keyframes pulse {
+  0%   { transform: scale(1); }
+  50%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+@-o-keyframes pulse {
+  0%   { transform: scale(1); }
+  50%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%   { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+
 .refresh{
     background-color: #80a8cc;
     color: #ffffff;
@@ -127,17 +149,30 @@ body{
             background: #fffbf5;
             &.highlight{
                 background: #fffceb;
-                transition: all 500ms ease-in-out;    
+                transition: all 500ms ease-in-out;
+                -webkit-animation: pulse 300ms 1s; /* Safari 4+ */
+                -moz-animation: pulse 300ms 1s; /* Fx 5+ */
+                -o-animation: pulse 300ms 1s; /* Opera 12+ */
+                animation: pulse 300ms 1s; /* IE 10+, Fx 29+ */    
             }
         }
     }
     .detail-wrap{
         padding-left: 18px;
+        position: relative;
         h2.actual-name{
             margin: 0;
             font-size: 16px;
             display: inline-block;
             color: #57575f;
+            margin-bottom: 10px;
+        }
+        .postTime{
+            color: #b7b5b4;
+            font-size: 14px;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
         .username{
             color: #c6c1b0;
@@ -145,6 +180,17 @@ body{
         }
         .twit-writ-wrap{
             color: #605e58;
+        }
+        .option-wrap{
+            margin-top: 15px;
+            i{
+                margin-right: 15px;
+                color: #c6c1b0;
+                cursor: pointer;
+                &:hover{
+                    color: rgba(80, 80, 80, 1);
+                }
+            }
         }
     }
 }

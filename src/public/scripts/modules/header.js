@@ -18,6 +18,7 @@ Application.addModule('header', function(context) {
             name: 'kajara',
             profilePic:'../images/twit/user-one.png',
             userName: '@kakaPakka',
+            twitTime: '1m',
             content: {
                 type:'post',
                 msg: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
@@ -168,7 +169,7 @@ Application.addModule('header', function(context) {
             dummyNotfCount = 0;
             _alertForNewNotf(dummyNotfCount)
             //display new notifications rows
-            var template = '{{~it.array :value:index}}<li class="highlight"><div class="twit-wrap clearfix"><div class="sm-col sm-col-1 img-wrap"><img src="{{=value.profilePic}}" /></div><div class="sm-col sm-col-11 detail-wrap"><h2 class="actual-name">{{=value.name}}</h2><span class="username">{{=value.userName}}</span><div class="twit-writ-wrap">{{=value.content.msg}}</div>{{? value.content.videoUrl}}<div class="videoWrap"><iframe width="560" height="315" src="{{=value.content.videoUrl}} frameborder="0" allowfullscreen></iframe></div>{{?}}{{? value.content.imageUrl}}<div class="postImageWrap"><img src="{{=value.content.imageUrl}}" /> </div>{{?}} <div class="option-wrap"></div></div></div></li>{{~}}'
+            var template = '{{~it.array :value:index}}<li class="highlight"><div class="twit-wrap clearfix"><div class="sm-col sm-col-1 img-wrap"><img src="{{=value.profilePic}}" /></div><div class="sm-col sm-col-11 detail-wrap"><div class="postTime">{{=value.twitTime}}</div><h2 class="actual-name">{{=value.name}}</h2><span class="username">{{=value.userName}}</span><div class="twit-writ-wrap">{{=value.content.msg}}</div>{{? value.content.videoUrl}}<div class="videoWrap"><iframe width="560" height="315" src="{{=value.content.videoUrl}} frameborder="0" allowfullscreen></iframe></div>{{?}}{{? value.content.imageUrl}}<div class="postImageWrap"><img src="{{=value.content.imageUrl}}" /> </div>{{?}}<div class="option-wrap"><i class="fa fa-mail-forward"></i><i class="fa fa-star"></i><i class="fa fa-refresh"></i><i class="fa fa-ellipsis-h"></i></div></div></div></li>{{~}}'
             $('.js-twit-list').prepend(doT.template(template)({array:response}));
             window.setTimeout(function(){
                 $('.highlight').removeClass('highlight')
@@ -194,7 +195,7 @@ Application.addModule('header', function(context) {
                         poll();
                     });
 
-                }, 1000);
+                }, 8000);
             })();
         },
         onclick: function(event, element, elementType) {
