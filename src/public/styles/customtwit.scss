@@ -1,11 +1,23 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 @import "basscss";
+
+@font-face {
+    font-family: 'openSans';
+    src: url('../../fonts/OpenSans-Light.eot');
+    src: url('../../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/OpenSans-Light.woff2') format('woff2'),
+         url('../../fonts/OpenSans-Light.woff') format('woff'),
+         url('../../fonts/OpenSans-Light.ttf') format('truetype'),
+         url('../../fonts/OpenSans-Light.svg#openSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     margin: 0;
     padding-top: 0;
-    font-family: "open sans";
+    font-family: "openSans";
     box-sizing: border-box;
     background-color: #f2eee8;
     *{
@@ -39,6 +51,7 @@ body{
         list-style: none;
         padding: 0;
         margin: 0;
+        text-align: center;
         li{
             display: inline-block;
             text-align: center;
@@ -70,7 +83,7 @@ body{
 
 
 .twit-main-container{
-    background: #fffbf5;
+    position: relative;
     .twit-wrap{
         padding: 30px 15px;
         .img-wrap{
@@ -86,6 +99,22 @@ body{
             }
         }
     }
+    .videoWrap{
+        margin-top: 20px;
+        iframe{
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .postImageWrap{
+        margin-top: 20px;
+        overflow: hidden;
+        img{
+            height: 295px;
+            width: auto;
+        }
+    }
     ul{
         padding: 0;
         margin: 0;
@@ -93,6 +122,13 @@ body{
         width: 100%;
         li{
             color: #f1ede8;
+            border-bottom: 1px solid #dedede;
+            display: block;
+            background: #fffbf5;
+            &.highlight{
+                background: #fffceb;
+                transition: all 500ms ease-in-out;    
+            }
         }
     }
     .detail-wrap{
@@ -111,8 +147,45 @@ body{
             color: #605e58;
         }
     }
+}
 
-
+@media (max-width: 768px){
+    .max720{
+        margin: 0 auto;
+    }
+    .head{
+        ul{
+            li{
+                padding: 6px;
+                width: 24%;
+                .lghtgry{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }  
+        } 
+    }
+    .refresh{
+        top: 58px;
+        left: calc(57% - 86px);
+    }
+    .twit-main-container{
+        ul{
+            li{
+                display: block;
+            }
+        }
+        .twit-wrap {
+            padding: 15px;
+        }
+        .detail-wrap{
+            padding-left: 0;
+            max-width: calc(100% - 70px);
+            margin-left: 10px;
+            display: inline-block;
+        }
+    }
 }
 
 

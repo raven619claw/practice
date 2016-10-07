@@ -10,7 +10,7 @@
     <body>
         <div class="clearfix" data-module="header">
         <header id="header">
-            <div> this is just some dummy div random</div>
+            <!-- <div> this is just some dummy div random</div> -->
         </header>
         <div class="max720 clearfix">
             <div class="container sm-col sm-col-12 main-wrap">
@@ -35,10 +35,10 @@
                     </ul>
                 </div>
                 <div class="refresh">
-                    <div data-type="new-notification-banner">new updates</div>
+                    <div class="js-new-updates" data-type="new-notification-banner">new updates</div>
                 </div>
                 <div class="twit-main-container">
-                    <ul class="clearfix">
+                    <ul class="clearfix js-twit-list">
                         <li>
                             <div class="twit-wrap clearfix">
                                 <div class="sm-col sm-col-1 img-wrap">
@@ -60,6 +60,8 @@
         </div>
         <script src="../public/scripts/t3.js"></script>
         <script src="../public/scripts/app.js"></script>
+        <script src="../public/scripts/doT.js"></script>
+        <script src="../public/scripts/jquery.min.js"></script>
         <script src="../public/scripts/modules/header.js"></script>
         <script>
             Application.init({
