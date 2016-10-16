@@ -51,6 +51,11 @@ app.get('/hk', function(req, res, next) {
     console.log("got your hit : refreshing");
 });
 
+app.get('/jooti', function(req, res, next) {
+    res.render('template/jooti.html');
+    console.log("got your hit : refreshing");
+});
+
 app.get('/innoplexus', function(req, res, next) {
     res.render('template/innoplexus.html');
     console.log("got your hit : refreshing");

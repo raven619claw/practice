@@ -10,6 +10,7 @@
     "ejs": "^2.3.3",
     "express": "^4.13.3",
     "jquery": "^2.1.4",
+    "normalize.scss": "^0.1.0",
     "request": "^2.61.0"
   },
   "devDependencies": {
