@@ -78,15 +78,22 @@ ul{
         height: 36px;
         position: absolute;
         left: -12px;
-        top: 5px;
+        top: 4px;
         width: 100%;
         z-index: 1;
         background-color: rgba(228,29,112,0.4);
         border: 1px solid rgba(255, 255, 255, .3);
+        transition: all 350ms ease-in-out;
     }
     >span{
         z-index: 2;
         position: relative;
+    }
+    &:hover{
+        cursor: pointer;
+        &:after{
+            left: -8px;
+        }
     }
 }
 
@@ -123,6 +130,11 @@ ul{
     margin: 0 auto;
 }
 
+.max935{
+    max-width: 935px;
+    margin: 0 auto;
+}
+
 header{
     padding-bottom: 5px;
     span{
@@ -134,7 +146,18 @@ header{
         display: inline-block;
         margin-right: 4px;
         vertical-align: middle;
-        background: #f5f5f5;
+        background: #ffffff;
+        font-size: 26px;
+        cursor: pointer;
+        &.fa-facebook-official{
+            color: #4962a3;
+        }
+        &.fa-twitter-square{
+            color: #58aee7;
+        }
+        &.fa-twitter-pinterest{
+            color: #bf1d1e;
+        }
     }
     .calluswrap{
         padding: 6px;
@@ -216,12 +239,15 @@ header{
                 height: 16px;
                 display: inline-block;
                 vertical-align: middle;
-                background: #f5f5f5;
                 margin-right: 5px;
+                font-size: 18px;
             }
         }
         .email{
             color: #008aff;
+            .icon{
+                font-size: 16px;
+            }
         }
     }
 }
@@ -327,7 +353,7 @@ nav{
     display: inline-block;
     vertical-align: top;
     .brick{
-        height: 110px;
+        height: 130px;
         overflow: hidden;
         color: #ffffff;
         position: relative;
@@ -357,13 +383,13 @@ nav{
         background-color: #ffffff;
     }
     .brick-hr-lg{
-        height: 110px;
+        height: 130px;
         overflow: hidden;
         padding-left: 2px;
         padding-right: 2px;
     }
     .brick-lg{
-        height: 224px;
+        height: 264px;
         padding-top: 2px;
         overflow: hidden;
         .image-wrap{
@@ -459,6 +485,8 @@ nav{
     .wear-section{
         padding-top: 100px;
         max-width: 1115px;
+        font-family: $roboto;
+        font-weight: bolder;
         &.two{
             padding-top: 33px;
         }
@@ -497,6 +525,8 @@ nav{
     padding: 60px 40px;
     margin-top:53px;
     border-top: 1px solid #c890b7;
+    max-width: 935px;
+    box-shadow: 0 4px 7px rgba(80,80,80,.6);
     .heading-tradtnl{
         text-transform: uppercase;
         padding-left: 28px;
@@ -576,6 +606,7 @@ nav{
     }
     .btns-wrap{
         margin-top: 50px;
+        margin-bottom: 72px;
     }
     .read-more,
     .post{
@@ -602,6 +633,71 @@ nav{
 
 .visible-sm{
     display: block;
+}
+
+footer{
+    background-color: #2b2b2b;
+    background: url(/images/jooti/bg_footer.png) left 80% repeat #2b2b2b;
+    padding-top: 54px;
+    ul{
+        font-family: $roboto;
+        li{
+            font-size: 14px;
+            color: #666666;
+            line-height: 1;
+            letter-spacing: 1px;
+            padding: 6px 0;
+            cursor: pointer;
+            transition: all 300ms ease-in-out;
+            &:hover{
+                color: #ffffff;
+            }
+            &.list-heading{
+                color: #d1d1d1;
+                padding-bottom: 20px;
+                font-size: 16px;
+                &:hover{
+                    cursor: inherit;
+                }
+            }
+        }
+    }
+    .lft-wrap{
+        border-right: 1px solid rgba(102,102,102,.5);
+    }
+    .image-wrap{
+        &.logo{
+            max-width: 200px;
+            margin: 0 auto;
+        }
+    }
+    .breadcrumb{
+        a{
+            font-size: 14px;
+            color: #666666;
+            transition: all 300ms ease-in-out;
+            &:hover{
+                color: #ffffff;
+            }
+        }
+    }
+    .footer-bottom{
+        background-color: #282626;
+        color: #5f5e5e;
+        font-size: 12px;
+        padding: 15px 0;
+        margin-top: 5px;
+    }
+    .fa.icon{
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .f-txt{
+        display: inline-block;
+        max-width: calc(100% - 40px);
+        vertical-align: top;
+    }
 }
 
 @media (max-width: 768px){
@@ -669,6 +765,111 @@ nav{
     .new-arrival-wrap .mt2{
         padding-left: 0;
     }
+
+    .best-seller-wrap .bnr-btn-wrap,
+    .new-arrival-wrap .bnr-btn-wrap{
+        text-align: left;
+        padding-left: 24px;
+        margin-bottom: 37px;
+    }
+    .vertical-txt{
+        transform: none;
+    }
+    .footwear-main-wrap{
+        .wear-section{
+            position: relative;
+            .horizontal-bar{
+                .value{
+                    left: 3%;
+                }  
+            }
+            .image-wrap{
+                padding: 0 20px;
+            }
+            .section-heading{
+                text-align: left;
+                font-size: 30px;
+                letter-spacing: 1px;
+                margin: 35px 0;
+                padding-left: 10px;
+                font-weight: normal;
+            }
+            &.two{
+                padding-top: 56px;
+            }
+        }
+        .pos-v-bar{
+            .vertical-txt{
+                position: absolute;
+                top: -80px;
+                right: auto;
+                text-align: center;
+                margin: 0;
+            }  
+        } 
+    }
+    .policy-wrap{
+        margin-top: 50px;
+        padding-bottom: 40px;
+        .box{
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 20px;
+        }
+    }
+    .traditional-wrap{
+        max-width: 308px;
+        padding: 40px 15px;
+        .heading-tradtnl{
+            padding-left: 0;
+            text-align: left;
+            font-weight: bold;
+            letter-spacing: 3px;
+            font-size: 22px;
+            font-family: $roboto;
+            &.big-fnt{
+                font-size: 28px;
+                padding-right: 0;
+                text-align: left;
+            }
+        }
+        .image-wrap{
+            max-width: 100%;
+            margin: 20px auto;
+        }
+        .trad-txt{
+            padding: 0;
+            .bnr-txt{
+                padding: 0;
+            }
+        }
+    }
+    .testimonials-wrap{
+        .heading-testimonial{
+            line-height: 1.1;
+            max-width: 270px;
+            font-size: 24px;
+        }
+        .slider-wrap{
+            max-width: 260px;
+            padding-top: 0;
+            .arrow-btn{
+                display: none;
+            }
+        }
+        .btns-wrap{
+            .read-more,
+            .post{
+                max-width: 200px;
+                margin: 20px auto;
+                display: block;
+            }
+            .read-more{
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    } 
 }
 
 
