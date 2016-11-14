@@ -26,8 +26,8 @@ app.get('/', function(req, res, next) {
     console.log("got your hit : refreshing");
 });
 
-app.get('/whatsExp', function(req, res, next) {
-        res.render('template/whatsExperiment.html');
+app.get('/browserstack', function(req, res, next) {
+        res.render('template/browserstack.html');
         console.log("got your hit : refreshing");
 });
 

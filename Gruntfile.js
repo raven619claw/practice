@@ -8,8 +8,8 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       build: {
-        src: 'src/public/scripts/*',
-        dest: 'build/public/scripts/sample.min.js'
+        src: 'src/public/scripts/**/*.js',
+        dest: 'build/public/scripts/main.min.js'
       }
     },
 
@@ -98,6 +98,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default task(s).
-  grunt.registerTask('serve', ['clean:client','uglify', 'sass', 'jshint', 'clean:client', 'watch' ]);
+  grunt.registerTask('serve', ['clean:client', 'sass', 'jshint', 'clean:client', 'watch' ]);
 
 };
