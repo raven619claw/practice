@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".minus").on("click",function(){console.log("weorking");var a=this.closest(".collapsable-content"),b=$(a).height();console.log(a),console.log(b),$(a).toggleClass("collapsed"),$(a).children(".after-collpase").css("width",b),$(a).children(".after-collpase").children().css("width",b),$(a).children(".after-collpase").toggleClass("show")})});

@@ -22,12 +22,17 @@ app.listen(port);
 console.log("port started");
 
 app.get('/', function(req, res, next) {
+    res.render('template/inmobi.html');
+    console.log("got your hit : refreshing");
+});
+
+app.get('/twit', function(req, res, next) {
     res.render('template/twit.html');
     console.log("got your hit : refreshing");
 });
 
-app.get('/browserstack', function(req, res, next) {
-        res.render('template/browserstack.html');
+app.get('/brstck', function(req, res, next) {
+        res.render('template/brstck.html');
         console.log("got your hit : refreshing");
 });
 
@@ -51,8 +56,8 @@ app.get('/hk', function(req, res, next) {
     console.log("got your hit : refreshing");
 });
 
-app.get('/innoplexus', function(req, res, next) {
-    res.render('template/innoplexus.html');
+app.get('/innplex', function(req, res, next) {
+    res.render('template/innplex.html');
     console.log("got your hit : refreshing");
 });
 
