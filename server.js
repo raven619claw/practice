@@ -26,6 +26,11 @@ app.get('/', function(req, res, next) {
     console.log("got your hit : refreshing");
 });
 
+app.get('/inmobi2', function(req, res, next) {
+    res.render('template/inmobisecond.html');
+    console.log("got your hit : refreshing");
+});
+
 app.get('/twit', function(req, res, next) {
     res.render('template/twit.html');
     console.log("got your hit : refreshing");

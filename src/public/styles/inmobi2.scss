@@ -1,0 +1,147 @@
+@import url(bootstrap.css);
+@font-face {
+    font-family: 'helvetica';
+    src: url("../../fonts/helvetica.eot");
+    src: url("../../fonts/helvetica.eot?#iefix") format("embedded-opentype"), 
+    url("../../fonts/helvetica.woff") format("woff"),
+    url("../../fonts/helvetica.woff2") format("woff2"), 
+    url("../../fonts/helvetica.ttf") format("truetype"), 
+    url("../../fonts/helvetica.svg#helvetica") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding-top: 0;
+    font-family: "helvetica";
+    box-sizing: border-box;
+    background-color: #ffffff;
+    * {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: border-box;
+        font-family: "helvetica", sans-serif;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'helvetica';
+    color: #222;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+
+header{
+    height: 130px;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    border-bottom: 1px solid #e2e2e2;
+    z-index: 99;
+    .logo{
+        a{
+            display: inline-block;
+            width: 100%;
+            vertical-align: middle;
+            padding: 30px 0 0;
+        }
+    }
+    .middle-options{
+        text-align: center;
+        ul{
+            max-width: 100%;
+            display: inline-block;
+            li{
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .top-middle{
+            font-size: 24px;
+            color: #353535;
+            ul{
+                border-bottom: 1px solid #e5e5e5;
+                li{
+                    padding: 20px 10px;
+
+                }
+            }
+        }
+        .bottom-middle{
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #434343;
+            ul{
+                li{
+                    padding: 18px 20px;
+                    font-weight: bold;
+
+                }
+            }
+        }
+    }
+    .login{
+        text-align: right;
+        a{
+            padding: 30px 0 0;
+            display: inline-block;
+            color: #434343;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+}
+
+.pencil-wrapper{
+    background: #f7f7f7;
+    height: 625px;
+    padding-top: 50px;
+    position: relative;
+    text-align: center;
+    .image-wrapper{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        img{
+            width: auto;
+            height: auto;
+        }
+        .heading-wrapper{
+            position: absolute;
+            top: 0;
+            right: calc(50% - 400px);
+            text-align: left;
+            max-width: 320px;
+            width: 100%;
+            display: inline-block;
+        }
+    }
+}
+
+.food-section{
+    background: #e7f5ff;
+    height: 625px;
+}
+
+
+
