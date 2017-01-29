@@ -15,8 +15,10 @@ Application.addModule('inmobiTwo', function(context) {
             var scrollTop = $(window).scrollTop();
             if(scrollTop> 100){
                 $("header").addClass('shrink');
+                $(".bottom-banner").addClass('fixed');
             }else{
                 $("header").removeClass('shrink');
+                $(".bottom-banner").removeClass('fixed');
             }
         });
     }

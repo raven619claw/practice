@@ -45,6 +45,23 @@ ul {
     padding: 0;
 }
 
+.btn-p{
+    background: #ffffff;
+    color: #073f56;
+    padding: 10px 25px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #073f56;
+}
+
+.btn-s{
+    background: #073f56;
+    color: #ffffff;
+    padding: 10px 25px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ffffff;
+}
 
 header{
     height: 130px;
@@ -202,4 +219,19 @@ header{
     }
 }
 
+.bottom-banner{
+    background: #073f56;
+    color: #ffffff;
+    text-align: center;
+    padding:38px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translate3d(0, 100%, 0);
+    transition: all 500ms ease-in-out;
+    &.fixed{
+        transform: translate3d(0, 0, 0);    
+    }
+}
 
