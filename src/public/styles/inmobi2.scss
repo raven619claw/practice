@@ -56,16 +56,20 @@ header{
     padding: 0 20px;
     border-bottom: 1px solid #e2e2e2;
     z-index: 99;
+    transition: height 500ms ease-in-out;
     .logo{
         a{
             display: inline-block;
             width: 100%;
             vertical-align: middle;
             padding: 30px 0 0;
+            transition: transform 500ms ease-in-out, padding 500ms ease-in-out;
         }
     }
     .middle-options{
         text-align: center;
+        transition: all 500ms ease-in-out;
+        height: 100%;
         ul{
             max-width: 100%;
             display: inline-block;
@@ -77,6 +81,7 @@ header{
         .top-middle{
             font-size: 24px;
             color: #353535;
+            transition: height 500ms ease-in-out, transform 300ms ease-in-out;
             ul{
                 border-bottom: 1px solid #e5e5e5;
                 li{
@@ -89,6 +94,11 @@ header{
             font-size: 14px;
             text-transform: uppercase;
             color: #434343;
+            transition: all 500ms ease-in-out;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
             ul{
                 li{
                     padding: 18px 20px;
@@ -106,6 +116,25 @@ header{
             color: #434343;
             font-weight: bold;
             font-size: 18px;
+        }
+    }
+    &.shrink{
+        height: 77px;
+        .logo{
+            a{
+                transform: scale(0.8);
+                padding: 8px 0 0;
+            }
+        }
+        .middle-options{
+            .top-middle{
+                height: 0;
+                opacity: 0;
+                transform: scale(0);
+            }
+            .bottom-middle{
+                bottom: 10px;
+            }
         }
     }
 }
@@ -140,8 +169,37 @@ header{
 
 .food-section{
     background: #e7f5ff;
-    height: 625px;
+    height: 525px;
+    .image-wrapper{
+        height: 100%;
+        width: 100%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .left-content{
+        position: relative;
+        height: 100%;
+    }
+    .content-box{
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        width: 330px;
+    }
 }
 
+.test-section{
+    background: #f0f0f0;
+    height: 650px;
+    h2{
+        vertical-align: middle;
+        padding: 20% 0;
+    }
+    &.ornge-clr{
+        background: #f0e7d4;
+    }
+}
 
 

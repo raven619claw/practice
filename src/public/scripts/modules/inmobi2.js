@@ -8,6 +8,17 @@ Application.addModule('inmobiTwo', function(context) {
         var moduleEl;
         moduleEl = context.getElement();
         $pageElement = $('#inmobiTwoPageWrapper');
+        scrollEvents();
+    }
+    function scrollEvents(){
+        $(window).on('scroll', function(){
+            var scrollTop = $(window).scrollTop();
+            if(scrollTop> 100){
+                $("header").addClass('shrink');
+            }else{
+                $("header").removeClass('shrink');
+            }
+        });
     }
     return {
         init
