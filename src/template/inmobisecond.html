@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../public/styles/release/inmobi2.min.css">
@@ -10,11 +9,12 @@
 
 <body>
     <div class="clearfix" data-module="inmobiTwo">
+        <div class="blackBG"></div>
         <header id="header" class="clearfix">
-            <div class="col-sm-1 col-xs-1 clearfix logo">
+            <div class="col-sm-1 col-xs-4 clearfix logo">
                 <a href="#"><img src="/images/burger.jpg" /></a>
             </div>
-            <div class="col-sm-10  col-xs-10 clearfix middle-options">
+            <div class="col-sm-10  col-xs-10 clearfix middle-options  hidden-xs">
                 <div class="top-middle">
                     <ul>
                         <li>Burger</li>
@@ -34,8 +34,53 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-1 col-xs-1 clearfix login">
+            <div class="col-sm-1 col-xs-1 clearfix login  hidden-xs">
                 <a href="#">Login</a>
+            </div>
+            <div class="col-xs-8 clearfix mob-nav visible-xs">
+                <div id="nav-icon4">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <ul class="menudrawer">
+                    <li class="hl"><a>Advertisers</a>
+                        <ul class="subNav">
+                            <li><a href="/advertisers">Overview</a></li>
+                            <li><a href="/advertisers/brand-engagement">Brand Marketing</a></li>
+                            <li><a href="/advertisers/user-acquisition">User Acquisition</a></li>
+                            <li><a href="/advertisers/remarketing">Remarketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="hl"><a>Publishers</a>
+                        <ul class="subNav">
+                            <li><a href="/publishers">Overview</a></li>
+                            <li><a href="/products/creatives#mobilevideo">Video Ads</a></li>
+                            <li><a href="/products/creatives#nativeads">Native Ads</a></li>
+                            <li><a href="/sdk/">Download SDK</a></li>
+                        </ul>
+                    </li>
+                    <li class="hl"><a>Products</a>
+                        <ul class="subNav">
+                            <li><a href="/products/creatives">Ad Experiences</a></li>
+                            <li><a href="/products/targeting">Targeting Solutions
+                          </a></li>
+                            <li><a href="/products/inmobi-exchange">Programmatic Buying</a></li>
+                            <li><a href="/products/remarketing">Remarketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="hl"><a>COMPANY</a>
+                        <ul class="subNav">
+                            <li><a href="/company/">About Us</a></li>
+                            <li><a href="/company/leadership/">Leadership</a></li>
+                            <li><a href="/company/careers/">Careers</a></li>
+                            <li><a href="/blog/">Blog</a></li>
+                            <li><a href="/insights/">INSIGHTS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.inmobi.com/user/register.html?locale=en_us" target="_blank" class="btn btn-clear">Sign Up</a></li>
+                    <li><a href="https://www.inmobi.com/user/index?productId=1" target="_blank" class="btn btn-primary">Sign In</a></li>
+                </ul>
             </div>
         </header>
         <div id="inmobiTwoPageWrapper" class="clearfix">
@@ -70,7 +115,7 @@
                 <h2> testing testing </h2>
             </section>
             <section class="bottom-banner">
-                <div class=""> Let's eat together people <span class="btn-p">Okay!</span> <span class="btn-s">I'm on diet</span> </div>
+                <div class=""> <span class="bot-txt">Let's eat together people</span> <span class="btn-p">Okay!</span> <span class="btn-s">I'm on diet</span> </div>
             </section>
         </div>
     </div>
