@@ -6,12 +6,14 @@
     <link rel="stylesheet" type="text/css" href="../public/styles/release/scroller.min.css">
     <link rel="stylesheet" type="text/css" href="../public/styles/release/inmobi.min.css">
     <title>inmobi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div class="clearfix" data-module="inmobi">
+        <div class="blackBG"></div>
         <header id="header-v4" class="clearfix">
-            <div class="col-sm-3 clearfix hdr-lft">
+            <div class="col-sm-3 col-xs-6 clearfix hdr-lft">
                 <div class="logo">
                     <a href="#" target="_blank">
                         <img class="white-logo" src="/images/inmobi-logo.png" alt="Inmobi"/>
@@ -19,8 +21,54 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-9 clearfix hdr-rght">
+            <div class="col-sm-9  col-xs-6 clearfix hdr-rght hidden-xs">
                 <ul class="topNav">
+                    <li class="hl"><a>Advertisers</a>
+                        <ul class="subNav">
+                            <li><a href="/advertisers">Overview</a></li>
+                            <li><a href="/advertisers/brand-engagement">Brand Marketing</a></li>
+                            <li><a href="/advertisers/user-acquisition">User Acquisition</a></li>
+                            <li><a href="/advertisers/remarketing">Remarketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="hl"><a>Publishers</a>
+                        <ul class="subNav">
+                            <li><a href="/publishers">Overview</a></li>
+                            <li><a href="/products/creatives#mobilevideo">Video Ads</a></li>
+                            <li><a href="/products/creatives#nativeads">Native Ads</a></li>
+                            <li><a href="/sdk/">Download SDK</a></li>
+                        </ul>
+                    </li>
+                    <li class="hl"><a>Products</a>
+                        <ul class="subNav">
+                            <li><a href="/products/creatives">Ad Experiences</a></li>
+                            <li><a href="/products/targeting">Targeting Solutions
+                          </a></li>
+                            <li><a href="/products/inmobi-exchange">Programmatic Buying</a></li>
+                            <li><a href="/products/remarketing">Remarketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="hl"><a>COMPANY</a>
+                        <ul class="subNav">
+                            <li><a href="/company/">About Us</a></li>
+                            <li><a href="/company/leadership/">Leadership</a></li>
+                            <li><a href="/company/careers/">Careers</a></li>
+                            <li><a href="/blog/">Blog</a></li>
+                            <li><a href="/insights/">INSIGHTS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.inmobi.com/user/register.html?locale=en_us" target="_blank" class="btn btn-clear">Sign Up</a></li>
+                    <li><a href="https://www.inmobi.com/user/index?productId=1" target="_blank" class="btn btn-primary">Sign In</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-xs-6 clearfix hdr-rght mob-nav visible-xs">
+                <div id="nav-icon4">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <ul class="menudrawer">
                     <li class="hl"><a>Advertisers</a>
                         <ul class="subNav">
                             <li><a href="/advertisers">Overview</a></li>
@@ -106,7 +154,7 @@
                         <div class="clearfix">
                             <h4>We're not just another mobile advertising company</h4>
                             <h3>We are a technology powerhouse</h3>
-                            <p>The global scale &amp; reach of our full-stack advertising platform helps brands nudge mobile users across different stages of their lifecycle, converting each mobile moment into an opportunity to drive engagement &amp; revenue.</p>
+                            <p class="hidden-xs">The global scale &amp; reach of our full-stack advertising platform helps brands nudge mobile users across different stages of their lifecycle, converting each mobile moment into an opportunity to drive engagement &amp; revenue.</p>
                             <div class="statBoxes clearfix">
                                 <ul class="statCol">
                                     <li class="statBox">
@@ -146,9 +194,10 @@
                       </div>
                 </section>
                 <section class="item">
-                    <div class=" white_container vertical_middle">
+                    <div class=" white_container vertical_middle text-center">
                         <div class="mini_container">
-                            <h2>Meet the Team</h2></div>
+                            <h2>Meet the Team</h2>
+                        </div>
                     </div>
                 </section>
             </div>

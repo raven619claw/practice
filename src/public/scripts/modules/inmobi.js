@@ -51,6 +51,19 @@ Application.addModule('inmobi', function(context) {
             $(".page-control").css({ "opacity": "0.7" });
             headerEvents();
         });
+    
+        $('#nav-icon4').click(function(){
+            $(this).toggleClass('open');
+            $('body').toggleClass('open');
+        });
+
+        $('.blackBG').click(function(){
+            $('body').removeClass('open');
+            $('#nav-icon4').removeClass('open');
+        });
+        $('.hl').click(function(){
+            $(this).toggleClass('open');
+        })
     }
 
     function headerEvents() {
